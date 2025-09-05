@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arsalan's portfolio — photography, projects, and CV." />
+  <title>Project — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+</head>
+<body class="theme-dark">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.svg" alt="Logo" class="logo" />
+      <span>Arsalan</span>
+    </a>
+    <nav id="nav" class="nav">
+      <a class="nav-link " href="index.html">Home</a>
+      <a class="nav-link " href="photography.html">Photography</a>
+      <a class="nav-link active" href="projects.html">Projects</a>
+      <a class="nav-link " href="cv.html">CV</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<main>
+
+<section class="container">
+  <a class="back" href="../projects.html">&larr; Back to projects</a>
+  <h1>Personal Portfolio</h1>
+  <p class="muted">Modern static site with dark navy theme, responsive layout, and a JS lightbox.</p>
+
+  <div class="project-meta">
+    <span class="pill">Web</span>
+    <span class="pill">HTML</span>
+    <span class="pill">CSS</span>
+    <span class="pill">JS</span>
+  </div>
+
+  <h2>Highlights</h2>
+  <ul class="nice-list">
+    <li>Zero-dependency frontend (no frameworks required).</li>
+    <li>Accessible semantics and keyboard-friendly navigation.</li>
+    <li>Responsive grid and fluid typography.</li>
+  </ul>
+
+  <h2>Screens</h2>
+  <div class="gallery small">
+    <a href="../assets/img/photo-1.jpg" class="gallery-item"><img src="../assets/img/photo-1.jpg" alt="Portfolio screenshot 1"></a>
+    <a href="../assets/img/photo-2.jpg" class="gallery-item"><img src="../assets/img/photo-2.jpg" alt="Portfolio screenshot 2"></a>
+  </div>
+</section>
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" alt="Expanded image">
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>&copy; 2025 Arsalan. All rights reserved.</div>
+    <div class="socials">
+      <a href="#" aria-label="GitHub" class="icon-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.2 11.2.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.6-1.5-1.4-2-1.4-2-1.2-.9.1-.9.1-.9 1.3.1 2 .1 2.7 1.7 1.2 2.1 3.2 1.5 4 .9.1-.9.5-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.6.1-3.1 0 0 1-.3 3.4 1.2a11.8 11.8 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.5.1 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.5-5.3 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.2.6.8.5 4.8-1.6 8.2-6 8.2-11.2A11.5 11.5 0 0 0 12 .5z"/></svg>
+      </a>
+      <a href="#" aria-label="LinkedIn" class="icon-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8.98h5V24H0V8.98zM8.98 8.98H14v2.05h.07c.7-1.33 2.42-2.73 4.98-2.73 5.32 0 6.3 3.5 6.3 8.04V24h-5v-6.67c0-1.59-.03-3.63-2.21-3.63-2.21 0-2.55 1.73-2.55 3.51V24H9V8.98h-.02z"/></svg>
+      </a>
+      <a href="mailto:hello@example.com" aria-label="Email" class="icon-link">@</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
